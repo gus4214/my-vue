@@ -2,18 +2,21 @@
 	<div id="app">
 		<ToDoTitle />
 		<ToDoInput />
+		<ToDoFooter />
 	</div>
 </template>
 
 <script>
 import ToDoTitle from "../src/components/ToDoTitle";
 import ToDoInput from "./components/ToDoInput.vue";
+import ToDoFooter from "./components/ToDoFooter.vue";
 
 export default {
 	name: "App",
 	components: {
 		ToDoTitle,
 		ToDoInput,
+		ToDoFooter,
 	},
 };
 </script>
