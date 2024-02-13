@@ -31,4 +31,3 @@ export default {
 	display: block;
 }
 </style>
->
