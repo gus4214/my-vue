@@ -10,6 +10,6 @@ export default {};
 
 <style scoped>
 h1 {
-	font-weight: 900;
+	font-weight: 800;
 }
 </style>
