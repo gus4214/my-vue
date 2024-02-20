@@ -27,9 +27,7 @@ export default {
 	},
 	methods: {
 		...mapMutations({
-			// 할 일 삭제 기능
 			removeTodo: "removeOneItem",
-			// 할 일 완료 기능
 			toggleComplete: "toggleOneItem",
 		}),
 	},
@@ -55,7 +53,7 @@ li {
 }
 .removeBtn {
 	margin-left: auto;
-	color: #de4343;
+	color: #000000;
 }
 .checkBtn {
 	line-height: 45px;
