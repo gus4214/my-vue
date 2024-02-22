@@ -2,6 +2,7 @@
 	<div id="app">
 		<ToDoHeader />
 		<ToDoInput />
+		<ToDoList />
 		<ToDoFooter />
 	</div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import ToDoHeader from "./components/ToDoHeader.vue";
 import ToDoInput from "./components/ToDoInput.vue";
+import ToDoList from "./components/ToDoList.vue";
 import ToDoFooter from "./components/ToDoFooter.vue";
 
 export default {
@@ -16,6 +18,7 @@ export default {
 	components: {
 		ToDoHeader,
 		ToDoInput,
+		ToDoList,
 		ToDoFooter,
 	},
 };
