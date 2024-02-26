@@ -2,6 +2,7 @@
 	<div class="clearAllContainer">
 		<span class="clearAllBtn" v-on:click="clearTodo">Clear All</span>
 	</div>
+	<span>하단 푸터</span>
 </template>
 
 <script>
