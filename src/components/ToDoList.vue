@@ -43,9 +43,9 @@ ul {
 }
 li {
 	display: flex;
-	min-height: 50px;
-	height: 50px;
-	line-height: 50px;
+	min-height: 45px;
+	height: 45px;
+	line-height: 45px;
 	margin: 0.5rem 0;
 	padding: 0 0.9rem;
 	background: #ffffff;
