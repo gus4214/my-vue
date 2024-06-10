@@ -1,26 +1,30 @@
 <template>
-	<div id="app">
-		<ToDoHeader />
-		<ToDoInput />
-		<ToDoList />
-		<ToDoFooter />
+	<div>
+		<div v-for="(v, i) in products" :key="i">
+			<h4>{{ v.product }}</h4>
+			<p>{{ v.price }} 만원</p>
+			<button @click="increase(i)">구매</button> <span>구매수 : {{ v.purchaseCount }}</span>
+		</div>
 	</div>
 </template>
 
 <script>
-import ToDoHeader from "./components/ToDoHeader.vue";
-import ToDoInput from "./components/ToDoInput.vue";
-import ToDoList from "./components/ToDoList.vue";
-import ToDoFooter from "./components/ToDoFooter.vue";
+import products from "/src/assets/products.js";
 
 export default {
 	name: "App",
-	components: {
-		ToDoHeader,
-		ToDoInput,
-		ToDoList,
-		ToDoFooter,
+	data() {
+		return {
+			modalOpen: false,
+			products,
+		};
 	},
+	methods: {
+		increase(i) {
+			this.products[i].purchaseCount++;
+		},
+	},
+	components: {},
 };
 </script>
 
